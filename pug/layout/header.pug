@@ -6,10 +6,10 @@ header.header
         .navbar__toggle
         nav.nav.header__nav
             ul.navbar
-                each navLink in [{name: 'С чего начать?', href: '#about'},{name: 'Как выполнить показатели?', href: '#homeScreen'},{name: 'Почему мы?', href: '#clients'},{name: 'Контакты', href: '#contact'}]
+                each navLink in [{name: 'С чего начать?', href: '#about'},{name: 'Как выполнить показатели?', href: '#services'},{name: 'Почему мы?', href: '#review'},{name: 'Контакты', href: '#contact'}]
                     li.navbar__item
                         a.navbar__link(href= navLink.href data-scroll-to)= navLink.name
 
         .header__right
-            a.header__print(href="#") Напишите нам
+            a.header__print(href="#" data-subscribe="") Напишите нам
             a.header__tel(href="tel:+74957773793") +7 (495) 777-37-93
