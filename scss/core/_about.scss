@@ -1,0 +1,127 @@
+.about {
+    padding: 4em 0;
+
+    @media (min-width: 768px) {
+        padding: 4.35em 0 12.8em;
+    }
+
+    &__content {
+        background: url("../img/about-bg.png") center no-repeat;
+        padding-right: 0.8em;
+    }
+
+    &__list {
+        position: relative;
+
+        @media (min-width: 768px) {
+            margin: auto;
+            width: 55.1em;
+            height: 54.8em;
+            border-radius: 50%;
+            border: 0.934322px solid rgba(#C9C9C9, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        font-size: 1.125em;
+        line-height: 1.7;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 2em;
+
+        @media (min-width: 768px) {
+            width: 23.125em;
+            position: absolute;
+            text-align: center;
+            display: block;
+            margin-bottom: 0;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0.8em;
+                width: 2.2em;
+                height: 2.2em;
+                background: #74D414;
+                border-radius: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+                opacity: 0;
+                transition: opacity 0.4s;
+            }
+        }
+
+        &:before {
+            content: '';
+            flex: none;
+            display: block;
+            margin: 0 1em 0 0;
+            width: 3em;
+            height: 3em;
+            margin-bottom: 0.4em;
+            border-radius: 50%;
+            background: url("../img/point.svg") 0 0 no-repeat;
+            background-size: 100%;
+            transition: border 0.4s;
+            border: 1px solid transparent;
+
+            @media (min-width: 768px) {
+                margin: auto;
+                width: 3.8em;
+                height: 3.8em;
+            }
+        }
+
+        &:hover {
+            &:after {
+                opacity: 1;
+            }
+
+            &:before {
+                border: 1px solid #74D414;
+                // background: none;
+            }
+        }
+
+        &:first-child {
+            top: 7.4em;
+            left: -6.1em;
+        }
+
+        &:nth-child(2) {
+            top: 1.8em;
+            right: -0.4em;
+        }
+
+        &:nth-child(3) {
+            left: -10.4em;
+            bottom: 11.4em;
+        }
+
+        &:nth-child(4) {
+            right: -11em;
+            bottom: 13.7em;
+        }
+
+        &:nth-child(5) {
+            bottom: -5.3em;
+            right: 8.3em;
+        }
+    }
+
+    &__center {
+
+        @media (min-width: 768px) {
+            width: 32.25em;
+            height: 32.25em;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+}

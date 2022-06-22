@@ -1,0 +1,101 @@
+.services {
+    padding: 4em 0 0;
+
+    @media (min-width: 768px) {
+        padding: 4.3em 0 0;
+    }
+
+    .section {
+        &__title {}
+    }
+
+    &__list {
+        @media (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -0.9375em;
+        }
+    }
+
+    &__item {
+        position: relative;
+        overflow: hidden;
+        margin: 0 0 1.875em;
+        padding: 1.5em;
+        background: #E6E8E9;
+
+        @media (min-width: 768px) {
+            width: calc(33.3% - 1.875em);
+            margin: 0 0.9375em 1.875em;
+            padding: 2.3125em 1.9375em 3.26em;
+        }
+
+        &:hover {
+            @media (min-width: 768px) {
+                .services {
+                    &__bottom {
+                        background: #74D414;
+                        height: 100%;
+                        overflow-y: auto;
+
+                        -ms-overflow-style: none;
+                        /* Edge, Internet Explorer */
+                        scrollbar-width: none;
+                        /* Firefox */
+                        &::-webkit-scrollbar {
+                            width: 0;
+                            height: 0;
+                        }
+                    }
+
+                    &__text {
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    &__icon {
+        width: 5.3125em;
+        margin-bottom: 1.5em;
+
+        @media (min-width: 768px) {
+            margin-bottom: 3.35em;
+        }
+    }
+
+    &__bottom {
+        padding: 0;
+        background-color: transparent;
+        transition: 0.4s;
+
+        @media (min-width: 768px) {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            padding: 2.3125em 1.9375em 1.26em;
+            height: 5.58em;
+        }
+    }
+
+    &__title {
+        font-size: 1.125em;
+        font-weight: 600;
+        cursor: default;
+    }
+
+    &__text {
+        margin-top: 0.5625em;
+        font-size: 1.125em;
+        line-height: 1.5;
+        cursor: default;
+
+        @media (min-width: 768px) {
+            height: 0;
+            overflow: hidden;
+        }
+    }
+}

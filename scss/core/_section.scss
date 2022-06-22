@@ -1,0 +1,17 @@
+.section {
+    &__title {
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 2.4em;
+        letter-spacing: 0.05em;
+        line-height: 1.48;
+
+        @media (min-width: 768px) {
+            font-size: 3em;
+
+            &_center {
+                text-align: center;
+            }
+        }
+    }
+}

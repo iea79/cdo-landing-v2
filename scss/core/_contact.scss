@@ -1,0 +1,94 @@
+.contact {
+    padding-top: 4em;
+    padding-bottom: 0;
+    background: radial-gradient(38.6% 73.42% at 50.76% 50%, #F7F7F7 0%, #EDEDED 100%);
+    position: relative;
+    overflow: hidden;
+
+    &__content {
+        width: 100%;
+        margin-bottom: 4em;
+    }
+
+    &__title {
+        font-size: 2.4em;
+        line-height: 1.49;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 0.7em;
+        letter-spacing: 0.08em;
+    }
+
+    &__city {
+        font-size: 1.3em;
+        font-weight: 500;
+        line-height: 1.4;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 1.2em;
+    }
+
+    &__list {
+        font-size: 1.2em;
+        font-weight: 500;
+        line-height: 1.37;
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+            margin: 0.875em 0;
+
+            a {
+                color: $main_color;
+                text-decoration: none;
+                border-bottom: 1px solid transparent;
+                // font-family: "Open Sans";
+                &:hover {
+                    border-color: $main_color;
+                }
+            }
+        }
+    }
+
+    &__map {
+        width: 100%;
+        height: 18em;
+
+        .map {
+            width: 100%;
+            height: 100%;
+            filter: grayscale(1);
+        }
+    }
+    @media (min-width: 768px) {
+        padding-top: 6.3em;
+        padding-bottom: 12.1em;
+
+        &__content {
+            width: 40%;
+            margin-bottom: 0;
+        }
+
+        &__title {
+            font-size: 3em;
+            margin-bottom: 1.2em;
+        }
+
+        &__city {
+            font-size: 1.625em;
+        }
+
+        &__list {
+            font-size: 1.125em;
+        }
+
+        &__map {
+            width: 55%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}

@@ -1,14 +1,23 @@
 // Main wrappers =====================================
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
 	font-size: calc(.034 * 100vw + 0px);
 	height: auto;
 	min-height: 100%;
+	font-feature-settings: 'pnum' on, 'lnum' on;
 	// color: $color_withe;
 
-	// background-color: #101010;
+	background-color: #F3F3F3;
+
+	&.navbar__open {
+		overflow: hidden;
+	}
 
 	@media (min-width: 768px) {
 		// font-size: calc(.012 * 100vw + 0px);

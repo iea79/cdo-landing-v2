@@ -1,4 +1,92 @@
 extends layout/layout.pug
 
 block content
-    .container_center
+    // begin home
+    section#home.home.section
+        .container_center
+            .home__content
+                .home__left
+                    h1.home__title ПРИОРИТЕТ 2030 <br>Создавайте будущее
+                    .home__action
+                        a.btn(href="#") Перейти к делу
+                .home__right
+                    img.home__point(src="img/point.svg", alt="")
+                    .home__img
+                        img(src="img/home-img.png", alt="")
+
+    // end home
+
+    // begin about
+    section#about.about.section
+        .container_center
+            h2.section__title.section__title_center Для тех, кто создает будущее
+            .about__content
+                .about__list
+                    .about__item Выведите науку своего университета на федеральный уровень
+                    .about__item Трудоустройте выпускников своего университета в ведущие компании страны
+                    .about__item Обеспечьте каждому обучающемуся индивидуализированное обучение
+                    .about__item Обеспечьте реальный сектор экономики высококвалифицированными кадрами
+                    .about__item Внедрите высокие технологии в образовательный процесс 
+                    .about__center
+                        img(src="img/about-center.png", alt="")
+
+    // end about
+
+    // begin action
+    section#action.action.section
+        .container_center
+            .action__content
+                .action__left
+                    h2.section__title Возьмите все, что поможет в создании будущего
+                    .action__text Получите все необходимые материалы для вашего успешного старта
+                .action__right
+                    a.btn.btn_pattern(href="#") Получить материалы
+
+    // end action
+
+    // begin services
+    section#services.services.section
+        .container_center
+            h2.section__title Сервисы, которые помогут создавать
+            .services__list
+                each item, i in ['CDO.ЭИОС', 'CDO.Индивидуальные траектории', 'CDO.Виртуальный лектор', 'CDO.Семантика', 'CDO.Трудоустройство ']
+                    .services__item
+                        .services__icon
+                            img(src="img/serv-"+(i+1)+".svg", alt=item)
+                        .services__bottom
+                            .services__title=item
+                            .services__text Деятельность Российского Международного Олимпийского университа ориентирована на подготовку высококвалифицированных специалистов в области спортивного менеджмента для российской и мировой 
+
+    // end services
+
+    // begin review
+    section#review.review.section
+        .container_center
+            h2.section__title Вот что говорят о нас те, кто уже с нами
+            .review__slider
+                each item, i in ['Отзыв Московского авиационного университета', 'Отзыв Московского Аграрного университета', 'Отзыв Московского авиационного университета', 'Отзыв Московского Аграрного университета']
+                    .review__item
+                        .review__logo
+                            img(src="img/rev.png", alt="")
+                        .review__content
+                            .review__title=item
+                            .review__text Деятельность Российского Международного Олимпийского университа ориентирована на подготовку высококвалифицированных специалистов в области спортивного менеджмента для российской и мировой индустрии спорта, олимпийского и паралимпийского движения. Менеджмента для российской и мировой индустрии спорта, олимпийского и паралимпийского движения.
+
+    // end review
+
+    // begin contact
+    section.contact#contact
+        .container_center
+            .contact__content 
+                h2.contact__title Контакты
+                .contact__city Москва
+                ul.contact__list 
+                    li 
+                        a(href="tel:+74957773793") +7 (495) 777-37-93; 
+                        a(href="tel:+74957773793") +7 (495) 777-37-93
+                    li 
+                        a(href="mailto:info@cdo-global.ru") info@cdo-global.ru
+                    li 119019, г. Москва, ул. Новый Арбат, д.11, стр.1, офис. 23
+        .contact__map
+            .map#map
+    // end contact

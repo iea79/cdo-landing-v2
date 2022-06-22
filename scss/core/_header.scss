@@ -1,14 +1,101 @@
 /* Header
  ----------------------------------------------------------------------------- */
 .header {
-	padding: 1em 0;
-	background-color: #ddd;
+	padding: 1.21em 0;
+	background: #F8F8F8;
+
+	@media (min-width: 768px) {
+		padding: 1.8em 0 1.3em;
+	}
 
 	&__content {
 		@extend .container_center;
-		margin: auto;
+		padding: 0 1em;
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
+		position: relative;
+
+		@media (min-width: 768px) {}
+	}
+
+	&__logo {
+		width: 9.125em;
+	}
+
+	&__nav {
+		padding-bottom: 0.4em;
+
+		@media (min-width: 768px) {
+			margin-right: 6em;
+		}
+
+		@media (max-width: 767px) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__right {
+		display: none;
+		font-size: 1.4em;
+		border-top: 1px solid rgba($color_withe, 0.2);
+		padding-top: 1.4em;
+
+		@media (min-width: 768px) {
+			display: flex;
+			align-items: center;
+			font-size: 1em;
+			padding-top: 0;
+			border-top: 0;
+		}
+
+		a {
+			color: $color_withe;
+
+			@media (min-width: 768px) {
+				color: #3F4353;
+			}
+		}
+	}
+
+	&__soc {
+		margin: 0 0 0.9375em;
+
+		@media (min-width: 768px) {
+			margin: 0 0.84em 0 0;
+		}
+	}
+
+	&__print {
+		text-decoration-color: inherit;
+		margin: 0 1.7em 0.6em 0;
+		font-size: 1.125em;
+
+		&:hover {
+			text-decoration-color: transparent;
+		}
+	}
+
+	&__tel {
+		font-family: "Open-Sans", sans-serif;
+		font-weight: 500;
+		font-size: 1.26em;
+		text-decoration-color: transparent;
+		margin-bottom: 0.4em;
+
+		&:hover {
+			text-decoration-color: inherit;
+		}
+	}
+
+	&__partner {
+		margin-left: 3.2em;
+		width: 15.6em;
+
+		img {
+			width: 100%;
+		}
 	}
 }
 
@@ -18,4 +105,18 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 3;
 }
+
+.logo {
+	width: 9.0625em;
+}
+
+.navbar {
+	&__item {}
+
+	&__link {}
+
+}
+
+.soc {}

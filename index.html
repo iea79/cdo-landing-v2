@@ -10,26 +10,178 @@
   <body>
     <header class="header">
       <div class="header__content">
-        <div class="header__left"><a class="logo" href="/"><img src="img/logo.png" alt="alt"/></a></div>
-        <nav class="header__right">
+        <div class="header__logo"><a class="logo" href="/"><img src="img/logo.svg" alt="CDO"/></a></div>
+        <div class="navbar__toggle"></div>
+        <nav class="nav header__nav">
           <ul class="navbar">
-            <li class="navbar__item"><a class="navbar__link" href="">Page1</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Page2</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Page3</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Page4</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#about" data-scroll-to="data-scroll-to">С чего начать?</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#homeScreen" data-scroll-to="data-scroll-to">Как выполнить показатели?</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#clients" data-scroll-to="data-scroll-to">Почему мы?</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#contact" data-scroll-to="data-scroll-to">Контакты</a></li>
           </ul>
         </nav>
+        <div class="header__right"><a class="header__print" href="#">Напишите нам</a><a class="header__tel" href="tel:+74957773793">+7 (495) 777-37-93</a></div>
       </div>
     </header>
     <main class="main_content">
-      <div class="container_center"></div>
+      <!-- begin home-->
+      <section class="home section" id="home">
+        <div class="container_center">
+          <div class="home__content">
+            <div class="home__left">
+              <h1 class="home__title">ПРИОРИТЕТ 2030 <br>Создавайте будущее</h1>
+              <div class="home__action"><a class="btn" href="#">Перейти к делу</a></div>
+            </div>
+            <div class="home__right"><img class="home__point" src="img/point.svg" alt=""/>
+              <div class="home__img"><img src="img/home-img.png" alt=""/></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end home-->
+      <!-- begin about-->
+      <section class="about section" id="about">
+        <div class="container_center">
+          <h2 class="section__title section__title_center">Для тех, кто создает будущее</h2>
+          <div class="about__content">
+            <div class="about__list">
+              <div class="about__item">Выведите науку своего университета на федеральный уровень</div>
+              <div class="about__item">Трудоустройте выпускников своего университета в ведущие компании страны</div>
+              <div class="about__item">Обеспечьте каждому обучающемуся индивидуализированное обучение</div>
+              <div class="about__item">Обеспечьте реальный сектор экономики высококвалифицированными кадрами</div>
+              <div class="about__item">Внедрите высокие технологии в образовательный процесс </div>
+              <div class="about__center"><img src="img/about-center.png" alt=""/></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end about-->
+      <!-- begin action-->
+      <section class="action section" id="action">
+        <div class="container_center">
+          <div class="action__content">
+            <div class="action__left">
+              <h2 class="section__title">Возьмите все, что поможет в создании будущего</h2>
+              <div class="action__text">Получите все необходимые материалы для вашего успешного старта</div>
+            </div>
+            <div class="action__right"><a class="btn btn_pattern" href="#">Получить материалы</a></div>
+          </div>
+        </div>
+      </section>
+      <!-- end action-->
+      <!-- begin services-->
+      <section class="services section" id="services">
+        <div class="container_center">
+          <h2 class="section__title">Сервисы, которые помогут создавать</h2>
+          <div class="services__list">
+            <div class="services__item">
+              <div class="services__icon"><img src="img/serv-1.svg" alt="CDO.ЭИОС"/></div>
+              <div class="services__bottom">
+                <div class="services__title">CDO.ЭИОС</div>
+                <div class="services__text">Деятельность Российского Международного Олимпийского университа ориентирована на подготовку высококвалифицированных специалистов в области спортивного менеджмента для российской и мировой </div>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__icon"><img src="img/serv-2.svg" alt="CDO.Индивидуальные траектории"/></div>
+              <div class="services__bottom">
+                <div class="services__title">CDO.Индивидуальные траектории</div>
+                <div class="services__text">Деятельность Российского Международного Олимпийского университа ориентирована на подготовку высококвалифицированных специалистов в области спортивного менеджмента для российской и мировой </div>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__icon"><img src="img/serv-3.svg" alt="CDO.Виртуальный лектор"/></div>
+              <div class="services__bottom">
+                <div class="services__title">CDO.Виртуальный лектор</div>
+                <div class="services__text">Деятельность Российского Международного Олимпийского университа ориентирована на подготовку высококвалифицированных специалистов в области спортивного менеджмента для российской и мировой </div>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__icon"><img src="img/serv-4.svg" alt="CDO.Семантика"/></div>
+              <div class="services__bottom">
+                <div class="services__title">CDO.Семантика</div>
+                <div class="services__text">Деятельность Российского Международного Олимпийского университа ориентирована на подготовку высококвалифицированных специалистов в области спортивного менеджмента для российской и мировой </div>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__icon"><img src="img/serv-5.svg" alt="CDO.Трудоустройство "/></div>
+              <div class="services__bottom">
+                <div class="services__title">CDO.Трудоустройство </div>
+                <div class="services__text">Деятельность Российского Международного Олимпийского университа ориентирована на подготовку высококвалифицированных специалистов в области спортивного менеджмента для российской и мировой </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end services-->
+      <!-- begin review-->
+      <section class="review section" id="review">
+        <div class="container_center">
+          <h2 class="section__title">Вот что говорят о нас те, кто уже с нами</h2>
+          <div class="review__slider">
+            <div class="review__item">
+              <div class="review__logo"><img src="img/rev.png" alt=""/></div>
+              <div class="review__content">
+                <div class="review__title">Отзыв Московского авиационного университета</div>
+                <div class="review__text">Деятельность Российского Международного Олимпийского университа ориентирована на подготовку высококвалифицированных специалистов в области спортивного менеджмента для российской и мировой индустрии спорта, олимпийского и паралимпийского движения. Менеджмента для российской и мировой индустрии спорта, олимпийского и паралимпийского движения.</div>
+              </div>
+            </div>
+            <div class="review__item">
+              <div class="review__logo"><img src="img/rev.png" alt=""/></div>
+              <div class="review__content">
+                <div class="review__title">Отзыв Московского Аграрного университета</div>
+                <div class="review__text">Деятельность Российского Международного Олимпийского университа ориентирована на подготовку высококвалифицированных специалистов в области спортивного менеджмента для российской и мировой индустрии спорта, олимпийского и паралимпийского движения. Менеджмента для российской и мировой индустрии спорта, олимпийского и паралимпийского движения.</div>
+              </div>
+            </div>
+            <div class="review__item">
+              <div class="review__logo"><img src="img/rev.png" alt=""/></div>
+              <div class="review__content">
+                <div class="review__title">Отзыв Московского авиационного университета</div>
+                <div class="review__text">Деятельность Российского Международного Олимпийского университа ориентирована на подготовку высококвалифицированных специалистов в области спортивного менеджмента для российской и мировой индустрии спорта, олимпийского и паралимпийского движения. Менеджмента для российской и мировой индустрии спорта, олимпийского и паралимпийского движения.</div>
+              </div>
+            </div>
+            <div class="review__item">
+              <div class="review__logo"><img src="img/rev.png" alt=""/></div>
+              <div class="review__content">
+                <div class="review__title">Отзыв Московского Аграрного университета</div>
+                <div class="review__text">Деятельность Российского Международного Олимпийского университа ориентирована на подготовку высококвалифицированных специалистов в области спортивного менеджмента для российской и мировой индустрии спорта, олимпийского и паралимпийского движения. Менеджмента для российской и мировой индустрии спорта, олимпийского и паралимпийского движения.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end review-->
+      <!-- begin contact-->
+      <section class="contact" id="contact">
+        <div class="container_center">
+          <div class="contact__content"> 
+            <h2 class="contact__title">Контакты</h2>
+            <div class="contact__city">Москва</div>
+            <ul class="contact__list"> 
+              <li> <a href="tel:+74957773793">+7 (495) 777-37-93; </a><a href="tel:+74957773793">+7 (495) 777-37-93</a></li>
+              <li> <a href="mailto:info@cdo-global.ru">info@cdo-global.ru</a></li>
+              <li>119019, г. Москва, ул. Новый Арбат, д.11, стр.1, офис. 23</li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact__map">
+          <div class="map" id="map"></div>
+        </div>
+      </section>
+      <!-- end contact-->
     </main>
     <footer class="footer">
-      <div class="footer__content">
-        <p></p>&copy; 2016 |<i class="fa fa-github" aria-hidden="true">&nbsp;</i><a href="#">View Source</a>
+      <div class="footer__top">
+        <div class="footer__content">
+          <div class="footer__logo"><a class="logo" href="/"><img src="img/logo_footer.svg" alt=""/></a></div>
+          <div class="footer__descr"><b>Приоритет 2030 </b><br/>Создавайте будущее</div>
+          <div class="footer__copyright">&copy; CDO Global 2001-2021</div>
+        </div>
       </div>
     </footer>
     <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/function.js?0.1"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_ru&amp;apikey=*7494e3e7-008f-4e03-bd72-31a4650591f7"></script>
+    <script src="js/map.js?0.1"></script>
   </body>
 </html>
