@@ -27,4 +27,153 @@
 @import 'core/services';
 @import 'core/review';
 @import 'core/contact';
-@import "vendor/modal";
+// @import "vendor/modal";
+
+.sendsay {
+    &-wrapper {
+        background-color: rgba(0, 0, 0, 0.6) !important;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-y: auto !important;
+        padding: 1em;
+    }
+
+    &-popup {
+        position: static !important;
+        transform: translate(0, 2em) !important;
+        background-color: #74D414 !important;
+        border-radius: 0 !important;
+        padding: 4.44em 1.75em !important;
+        color: #3F4353 !important;
+        width: 100% !important;
+        max-width: 92.5em;
+        max-height: inherit !important;
+        margin: auto;
+        font-family: $main_font_family !important;
+        overflow: hidden !important;
+
+        @media (min-width: 768px) {
+            padding: 6.4375em 3.75em !important;
+        }
+    }
+
+    &-animation-zoom {
+        animation-name: chowModal !important;
+        // transform: translate(0, 0em) !important;
+    }
+
+    &-centered {}
+
+    &-type-popup {}
+
+    &-close {
+        &__svg {}
+
+        &--with-icon {}
+    }
+
+    &-content {}
+
+    &-column {
+        &wrapper {}
+
+    }
+
+    &-text {
+        padding-bottom: 1em !important;
+
+        span {
+            font-family: $main_font_family !important;
+            font-size: inherit !important;
+        }
+
+        b {
+            font-weight: 400 !important;
+            text-transform: uppercase;
+            font-size: 2em;
+
+            @media (min-width: 768px) {
+                font-size: 2.75em;
+            }
+        }
+    }
+
+    &-field {
+        padding: 1.875em 0 0 0 !important;
+
+        @media (min-width: 768px) {
+            padding: 1.875em 1.875em 0 0 !important;
+            float: left;
+            width: 35%;
+        }
+
+        label {
+            // display: none;
+            font-weight: 400;
+            padding-bottom: 0.7em !important;
+        }
+
+        &:after {
+            content: '';
+            display: table;
+            clear: both;
+            width: 100%;
+        }
+
+    }
+
+    &-label {}
+
+    &-input {}
+
+    &-error {
+        position: absolute;
+        font-size: 0.8em !important;
+    }
+
+    &-button {
+        position: relative;
+        margin-top: 3em;
+        z-index: 2;
+        @extend .btn;
+        @extend .btn_pattern;
+
+        @media (min-width: 768px) {
+            margin-top: -5em;
+            float: right;
+        }
+
+        input[type="button"] {
+            background-color: transparent !important;
+            border-radius: 0 !important;
+            padding: 0 !important;
+            color: $btn_default_text_color !important;
+            font-family: $main_font_family !important;
+            font-size: 1em !important;
+            width: auto !important;
+
+        }
+
+        &:after,
+        &:before {
+            // content: '';
+            // display: table;
+            // clear: both;
+            // width: 100%;
+        }
+
+    }
+
+}
+
+@keyframes chowModal {
+    0% {
+        transform: translate(0, 2em) !important;
+    }
+
+    100% {
+        transform: translate(0, 0) !important;
+    }
+}

@@ -36,34 +36,35 @@ input[type=tel],
 input[type=text],
 input[type=url],
 textarea {
-	background-color: $input_bg_color;
-	border: 1px solid $input_border_color;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid rgba(#262F1D, 0.4);
 	font-family: $main_font_family;
-	color: $input_color;
-	padding: 6px 15px;
+	color: #262F1D;
+	padding: 0.5em 0 1.3em;
 	outline: none;
 	font-size: 16px;
 	font-weight: 400;
-	border-radius: 5px;
+	border-radius: 0;
 	transition: 0.3s;
 
 	&:hover {
-		border: 1px solid $input_hover_border_color;
-		background-color: $input_hover_bg_color;
+		border-bottom: 1px solid rgba(#262F1D, 0.4);
+		background-color: transparent;
 	}
 
 	&:focus {
-		border: 1px solid $input_focus_border_color;
-		background-color: $input_focus_bg_color;
+		border-bottom: 1px solid rgba(#262F1D, 0.6);
+		background-color: transparent;
 	}
 
 	&.invalid {
-		background-color: $input_error_bg_color;
-		border: 1px solid $input_error_border_color;
+		background-color: transparent;
+		border-bottom: 1px solid rgba(#262F1D, 0.4);
 	}
 	// Placeholder for input +++++++++++++++
 	@include placeholder {
-		color: $input_placeholder_color;
+		color: #262F1D;
 	}
 }
 
