@@ -47,8 +47,10 @@ window.onload = () => {
         ]
     });
 
-    $('[data-subscribe]').on('click', () => {
-        SENDSAY.activatePopup("https://sendsay.ru/form/x_164629201684483/1/");
+    $('[data-sendsay-form-subscribe]').on('click', function() {
+        const form = $(this).data('sendsayFormSubscribe');
+        // console.log(form);
+        SENDSAY.activatePopup("https://sendsay.ru/form/"+form+"");
     })
 };
 
